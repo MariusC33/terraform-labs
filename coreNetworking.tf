@@ -10,7 +10,7 @@ resource "azurerm_public_ip" "vpnGatewayPublicIp" {
    location = "${azurerm_resource_group.core.location}"
    tags = "${azurerm_resource_group.core.tags}"
 
-    allocation_method = "dynamic"
+    allocation_method = "Dynamic"
 }
 
 resource "azurerm_virtual_network" "core" {
